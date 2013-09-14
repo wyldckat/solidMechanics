@@ -1,7 +1,5 @@
-Solid Mechanics
-===============
-Finite Volume Solvers
-=====================
+Solid Mechanics - Finite Volume Solvers
+=======================================
 
 The included solid mechanics solvers employ the finite volume method
 (not finite elements) to numerically approximate the displacements
@@ -28,7 +26,9 @@ Have fun.
 
 
 Notes for OpenFOAM-2.2.0
-disabled capabilities for compilation:
+------------------------
+
+Disabled capabilities for compilation:
    - solidInterface because of faMesh
    - ggiInterpolation option in contact boundaries
    - fixedRotation boundary condition because of RodriguesRotation
@@ -44,7 +44,7 @@ Further modificiations made by Bruno Santos <wyldckat@github>:
    - Moved solvers to their own folder.
    - Simplified Allw* scripts, since this way we can use the multi-core building ability that OpenFOAM has got.
    - Using "realpath" as a compatibility measure with compiling on Windows (blueCFD).
-   
+   - Created branches for each one of the latest OpenFOAM git versions: OF22x OF21x OF20x
 
 License
 =======
