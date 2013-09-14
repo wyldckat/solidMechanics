@@ -31,3 +31,16 @@ disabled capabilities for compilation:
 	 - ggiInterpolation option in contact boundaries
 	 - fixedRotation boundary condition because of RodriguesRotation
 	 - finiteElement mesh motion in FSI solver
+
+
+-----------------------
+
+Further modificiations made by Bruno Santos <wyldckat@github>:
+   - Moved solvers to their own folder.
+   - Simplified Allw* scripts, since this way we can use the multi-core
+     building ability that OpenFOAM has got.
+   - Using "realpath" as a compatibility measure with compiling on Windows
+     (blueCFD).
+   
+-----------------------
+License: the same as OpenFOAM, namely GNU GPL v3.
