@@ -2,7 +2,7 @@ EXE_INC = \
     -I$(FOAM_SRC)/finiteVolume/lnInclude \
     -I$(FOAM_SRC)/meshTools/lnInclude \
     -I$(FOAM_SRC)/lagrangian/basic/lnInclude \
-    -I../solidModels/lnInclude
+    -I$(realpath ../../solidModels/lnInclude)
 
 EXE_LIBS = \
     -L$(FOAM_USER_LIBBIN) -lsolidModels \

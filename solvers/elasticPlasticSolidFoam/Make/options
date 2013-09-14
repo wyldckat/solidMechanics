@@ -1,6 +1,6 @@
 EXE_INC = \
     -I$(LIB_SRC)/finiteVolume/lnInclude \
-    -I../solidModels/lnInclude
+    -I$(realpath ../../solidModels/lnInclude)
 
 EXE_LIBS = \
     -lfiniteVolume \
