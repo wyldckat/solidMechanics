@@ -3,18 +3,5 @@ set -x
 
 wmake libso solidModels
 
-wmake elasticContactSolidFoam
-wmake elasticContactIncrSolidFoam
-wmake elasticContactNonLinULSolidFoam
-wmake elasticGravitySolidFoam
-wmake elasticIncrSolidFoam
-wmake elasticNonLinTLSolidFoam
-wmake elasticNonLinULSolidFoam
-wmake elasticPlasticNonLinULSolidFoam
-wmake elasticPlasticSolidFoam
-wmake elasticSolidFoam
-wmake elasticThermalSolidFoam
-wmake icoFsiElasticNonLinULSolidFoam
-wmake viscoElasticSolidFoam
-
-(cd utilities && ./Allwmake)
+wmake all solvers
+wmake all utilities

@@ -1,20 +1,7 @@
 #!/bin/sh
 set -x
 
-wclean solidModels
+wclean libso solidModels
 
-wclean elasticContactSolidFoam
-wclean elasticContactIncrSolidFoam
-wclean elasticContactNonLinULSolidFoam
-wclean elasticGravitySolidFoam
-wclean elasticIncrSolidFoam
-wclean elasticNonLinTLSolidFoam
-wclean elasticNonLinULSolidFoam
-wclean elasticPlasticSolidFoam
-wclean elasticPlasticNonLinULSolidFoam
-wclean elasticSolidFoam
-wclean elasticThermalSolidFoam
-wclean icoFsiElasticNonLinULSolidFoam
-wclean viscoElasticSolidFoam
-
-(cd utilities && ./Allwclean)
+wclean all solvers
+wclean all utilities
