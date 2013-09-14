@@ -46,6 +46,104 @@ Further modificiations made by Bruno Santos <wyldckat@github>:
    - Using "realpath" as a compatibility measure with compiling on Windows (blueCFD).
    - Created branches for each one of the latest OpenFOAM git versions: OF22x OF21x OF20x
 
+
+Building on OpenFOAM 2.2.x, 2.1.x and 2.0.x
+===========================================
+
+Using Git
+---------
+
+  1. Go to your user folder:
+
+     ```
+     mkdir -p $FOAM_RUN
+     cd $FOAM_RUN/..
+     ```
+
+  2. Clone the repository and go into the cloned repository:
+
+     ```
+     git clone https://github.com/wyldckat/solidMechanics.git
+     cd solidMechanics
+     ```
+
+  3. Checkout the repository respective to the version of OpenFOAM you are using:
+
+   * OpenFOAM 2.2.x:
+
+     ```
+     git checkout OF22x
+     ```
+
+   * OpenFOAM 2.1.x:
+
+     ```
+     git checkout OF21x
+     ```
+
+   * OpenFOAM 2.0.x:
+
+     ```
+     git checkout OF20x
+     ```
+     
+   4. Build all of the libraries and utilities by running:
+
+     ```
+     ./Allwmake
+     ```
+
+   5. The tutorials are available at the folder `tutorials`.
+
+
+Using Zip
+---------
+
+  1. Go to your user folder:
+
+     ```
+     mkdir -p $FOAM_RUN
+     cd $FOAM_RUN/..
+     ```
+
+  2. Get the Zip file for the repository respective to the version of OpenFOAM you are using:
+
+   * OpenFOAM 2.2.x:
+
+     ```
+     wget https://github.com/wyldckat/solidMechanics/archive/OF22x.zip
+     ```
+
+   * OpenFOAM 2.1.x:
+
+     ```
+     wget https://github.com/wyldckat/solidMechanics/archive/OF21x.zip
+     ```
+
+   * OpenFOAM 2.0.x:
+
+     ```
+     wget https://github.com/wyldckat/solidMechanics/archive/OF20x.zip
+     ```
+
+   3. Unzip the respective file and go into the respective folder, for example:
+
+     ```
+     unzip OF22x.zip
+     cd solidMechanics-OF22x
+     ```
+     
+   4. Build all of the libraries and utilities by running:
+
+     ```
+     ./Allwmake
+     ```
+
+   5. The tutorials are available at the folder `tutorials`.
+
+
+
+
 License
 =======
 
