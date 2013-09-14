@@ -75,8 +75,7 @@ int main(int argc, char *argv[])
       int iCorr = 0;
       scalar initialResidual = 0;
       scalar relativeResidual = GREAT;
-      //lduMatrix::solverPerformance solverPerf;
-      solverPerformance solverPerf;
+      lduMatrix::solverPerformance solverPerf;
       lduMatrix::debug = 0;
       
       const volSymmTensorField& DEpsilonP = rheology.DEpsilonP();

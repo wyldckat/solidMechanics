@@ -68,10 +68,8 @@ int main(int argc, char *argv[])
       int iCorr = 0;
       scalar initialResidual = GREAT;
       scalar residual = GREAT;
-//       lduMatrix::solverPerformance solverPerfU;
-//       lduMatrix::solverPerformance solverPerfT;
-      solverPerformance solverPerfU;
-      solverPerformance solverPerfT;
+      lduMatrix::solverPerformance solverPerfU;
+      lduMatrix::solverPerformance solverPerfT;
      
       lduMatrix::debug=0;
 

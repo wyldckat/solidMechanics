@@ -88,8 +88,7 @@ int main(int argc, char *argv[])
 #     include "readStressedFoamControls.H"
 
       int iCorr = 0;
-      //lduMatrix::solverPerformance solverPerf;
-      solverPerformance solverPerf;
+      lduMatrix::solverPerformance solverPerf;
       scalar initialResidual = 0;
       scalar relativeResidual = GREAT;
       lduMatrix::debug = 0;

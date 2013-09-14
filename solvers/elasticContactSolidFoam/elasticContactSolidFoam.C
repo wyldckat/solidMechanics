@@ -95,8 +95,7 @@ int main(int argc, char *argv[])
       vectorField oldMeshPoints = mesh.points();
       
       int iCorr = 0;
-      //lduMatrix::solverPerformance solverPerf;
-      solverPerformance solverPerf;
+      lduMatrix::solverPerformance solverPerf;
       word solverName;
       lduMatrix::debug = 0;
       scalar residual = GREAT;
