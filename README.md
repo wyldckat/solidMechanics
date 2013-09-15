@@ -45,6 +45,7 @@ Further modificiations made by Bruno Santos <wyldckat@github>:
    - Simplified Allw* scripts, since this way we can use the multi-core building ability that OpenFOAM has got.
    - Using "realpath" as a compatibility measure with compiling on Windows (blueCFD).
    - Created branches for each one of the latest OpenFOAM git versions: OF22x OF21x OF20x
+     - Note: Have not tested any of the tutorials with all of these OpenFOAM versions.
 
 
 Building on OpenFOAM 2.2.x, 2.1.x and 2.0.x
