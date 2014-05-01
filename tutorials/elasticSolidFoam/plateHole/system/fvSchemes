@@ -23,8 +23,8 @@ d2dt2Schemes
 gradSchemes
 {
     default         none;
-    grad(U)         extendedLeastSquares 0;
-    snGradCorr(U)   extendedLeastSquares 0;
+    grad(U)         leastSquares 0;
+    snGradCorr(U)   leastSquares 0;
 }
 
 divSchemes
