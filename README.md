@@ -44,12 +44,12 @@ Further modificiations made by Bruno Santos <wyldckat@github>:
    - Moved solvers to their own folder.
    - Simplified Allw* scripts, since this way we can use the multi-core building ability that OpenFOAM has got.
    - Using "realpath" as a compatibility measure with compiling on Windows (blueCFD).
-   - Created branches for each one of the latest OpenFOAM git versions: OF22x OF21x OF20x
+   - Created branches for each one of the latest OpenFOAM git versions: OF23x OF22x OF21x OF20x
      - Note: Have not tested any of the tutorials with all of these OpenFOAM versions.
 
 
-Building on OpenFOAM 2.2.x, 2.1.x and 2.0.x
-===========================================
+Building on OpenFOAM 2.3.x, 2.2.x, 2.1.x and 2.0.x
+==================================================
 
 Using Git
 ---------
@@ -69,6 +69,12 @@ Using Git
      ```
 
   3. Checkout the repository respective to the version of OpenFOAM you are using:
+
+   * OpenFOAM 2.3.x:
+
+     ```
+     git checkout OF23x
+     ```
 
    * OpenFOAM 2.2.x:
 
@@ -109,6 +115,12 @@ Using Zip
 
   2. Get the Zip file for the repository respective to the version of OpenFOAM you are using:
 
+   * OpenFOAM 2.3.x:
+
+     ```
+     wget https://github.com/wyldckat/solidMechanics/archive/OF23x.zip
+     ```
+
    * OpenFOAM 2.2.x:
 
      ```
@@ -130,8 +142,8 @@ Using Zip
    3. Unzip the respective file and go into the respective folder, for example:
 
      ```
-     unzip OF22x.zip
-     cd solidMechanics-OF22x
+     unzip OF23x.zip
+     cd solidMechanics-OF23x
      ```
      
    4. Build all of the libraries and utilities by running:
@@ -148,5 +160,5 @@ Using Zip
 License
 =======
 
-The same as OpenFOAM(R), namely GNU GPL v3.
+The same as OpenFOAM(R), namely GNU GPL v3. For more information, see the file LICENSE.
 
