@@ -247,7 +247,7 @@ symmTensor analyticalPlateHoleTractionFvPatchVectorField::plateHoleSolution(cons
 
 
     // Transformation to global coordinate system
-    sigma = ((cs.R()&sigma)&cs.R().T());
+    sigma = ((cs.R().R() & sigma) & cs.R().R().T());
 
     symmTensor S = symmTensor::zero;
 
