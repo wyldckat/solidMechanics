@@ -94,13 +94,13 @@ Using Git
      git checkout OF20x
      ```
      
-   4. Build all of the libraries and utilities by running:
+  4. Build all of the libraries and utilities by running:
 
-     ```
-     ./Allwmake
-     ```
+    ```
+    ./Allwmake
+    ```
 
-   5. The tutorials are available at the folder `tutorials`.
+  5. The tutorials are available at the folder `tutorials`.
 
 
 Using Zip
@@ -139,20 +139,20 @@ Using Zip
      wget https://github.com/wyldckat/solidMechanics/archive/OF20x.zip
      ```
 
-   3. Unzip the respective file and go into the respective folder, for example:
+  3. Unzip the respective file and go into the respective folder, for example:
 
-     ```
-     unzip OF23x.zip
-     cd solidMechanics-OF23x
-     ```
-     
-   4. Build all of the libraries and utilities by running:
+    ```
+    unzip OF23x.zip
+    cd solidMechanics-OF23x
+    ```
+    
+  4. Build all of the libraries and utilities by running:
 
-     ```
-     ./Allwmake
-     ```
+    ```
+    ./Allwmake
+    ```
 
-   5. The tutorials are available at the folder `tutorials`.
+  5. The tutorials are available at the folder `tutorials`.
 
 
 
