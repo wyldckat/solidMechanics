@@ -40,16 +40,16 @@ Further modifications
 
 Original source came from here: http://www.cfd-online.com/Forums/openfoam-news-announcements-other/106881-solid-mechanics-solvers-added-openfoam-extend-4.html#post432903
 
-Further modificiations made by Bruno Santos <wyldckat@github>:
+Further modificiations made by Bruno Santos (wyldckat@github working at [blueCAPE Lda](www.bluecape.com.pt)):
    - Moved solvers to their own folder.
    - Simplified Allw* scripts, since this way we can use the multi-core building ability that OpenFOAM has got.
    - Using "realpath" as a compatibility measure with compiling on Windows (blueCFD).
-   - Created branches for each one of the latest OpenFOAM git versions: OF22x OF21x OF20x
+   - Created branches for each one of the latest OpenFOAM git versions: OF23x OF22x OF21x OF20x
      - Note: Have not tested any of the tutorials with all of these OpenFOAM versions.
 
 
-Building on OpenFOAM 2.2.x, 2.1.x and 2.0.x
-===========================================
+Building on OpenFOAM 2.3.x, 2.2.x, 2.1.x and 2.0.x
+==================================================
 
 Using Git
 ---------
@@ -70,6 +70,12 @@ Using Git
 
   3. Checkout the repository respective to the version of OpenFOAM you are using:
 
+   * OpenFOAM 2.3.x:
+
+     ```
+     git checkout OF23x
+     ```
+
    * OpenFOAM 2.2.x:
 
      ```
@@ -88,13 +94,13 @@ Using Git
      git checkout OF20x
      ```
      
-   4. Build all of the libraries and utilities by running:
+  4. Build all of the libraries and utilities by running:
 
-     ```
-     ./Allwmake
-     ```
+    ```
+    ./Allwmake
+    ```
 
-   5. The tutorials are available at the folder `tutorials`.
+  5. The tutorials are available at the folder `tutorials`.
 
 
 Using Zip
@@ -108,6 +114,12 @@ Using Zip
      ```
 
   2. Get the Zip file for the repository respective to the version of OpenFOAM you are using:
+
+   * OpenFOAM 2.3.x:
+
+     ```
+     wget https://github.com/wyldckat/solidMechanics/archive/OF23x.zip
+     ```
 
    * OpenFOAM 2.2.x:
 
@@ -127,20 +139,20 @@ Using Zip
      wget https://github.com/wyldckat/solidMechanics/archive/OF20x.zip
      ```
 
-   3. Unzip the respective file and go into the respective folder, for example:
+  3. Unzip the respective file and go into the respective folder, for example:
 
-     ```
-     unzip OF22x.zip
-     cd solidMechanics-OF22x
-     ```
-     
-   4. Build all of the libraries and utilities by running:
+    ```
+    unzip OF23x.zip
+    cd solidMechanics-OF23x
+    ```
+    
+  4. Build all of the libraries and utilities by running:
 
-     ```
-     ./Allwmake
-     ```
+    ```
+    ./Allwmake
+    ```
 
-   5. The tutorials are available at the folder `tutorials`.
+  5. The tutorials are available at the folder `tutorials`.
 
 
 
@@ -148,5 +160,5 @@ Using Zip
 License
 =======
 
-The same as OpenFOAM(R), namely GNU GPL v3.
+The same as OpenFOAM(R), namely GNU GPL v3. For more information, see the file LICENSE.
 
