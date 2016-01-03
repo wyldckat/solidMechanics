@@ -40,7 +40,7 @@ Further modifications
 
 Original source came from here: http://www.cfd-online.com/Forums/openfoam-news-announcements-other/106881-solid-mechanics-solvers-added-openfoam-extend-4.html#post432903
 
-Further modificiations made by Bruno Santos (wyldckat@github working at [blueCAPE Lda](www.bluecape.com.pt)):
+Further modificiations made by Bruno Santos (wyldckat@github working at [blueCAPE Lda](http://www.bluecape.com.pt)):
    - Moved solvers to their own folder.
    - Simplified Allw* scripts, since this way we can use the multi-core building ability that OpenFOAM has got.
    - Using "realpath" as a compatibility measure with compiling on Windows (blueCFD).
@@ -70,12 +70,6 @@ Using Git
 
   3. Checkout the repository respective to the version of OpenFOAM you are using:
 
-   * OpenFOAM 2.3.x:
-
-     ```
-     git checkout OF23x
-     ```
-
    * OpenFOAM 2.2.x:
 
      ```
@@ -94,13 +88,13 @@ Using Git
      git checkout OF20x
      ```
      
-  4. Build all of the libraries and utilities by running:
+   4. Build all of the libraries and utilities by running:
 
-    ```
-    ./Allwmake
-    ```
+     ```
+     ./Allwmake
+     ```
 
-  5. The tutorials are available at the folder `tutorials`.
+   5. The tutorials are available at the folder `tutorials`.
 
 
 Using Zip
